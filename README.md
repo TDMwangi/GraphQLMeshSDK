@@ -14,3 +14,9 @@ npm run start:dev
 Navigate to: http://localhost:3000/graphql
 
 ![image info](./img/1.png)
+
+## _To generate the .mesh folder:_
+
+```sh
+npm run generate-schema
+```
