@@ -20,3 +20,45 @@ Navigate to: http://localhost:3000/graphql
 ```sh
 npm run generate-schema
 ```
+
+## _Example queries to access the countries, anime and pet store data:_
+
+```sh
+query GetCountry {
+  country(code: "BR") {
+    name
+    native
+    capital
+    emoji
+    currency
+    languages {
+      code
+      name
+    }
+  }
+}
+
+query GetAnimeCharacter {
+  Character(id: 1) {
+    name {
+      first
+      last
+    }
+    image {
+      large
+    }
+    age
+    description
+  }
+}
+
+query GetPetById {
+  getPetById(petId: 10) {
+    name
+    category {
+      id
+      name
+    }
+  }
+}
+```
