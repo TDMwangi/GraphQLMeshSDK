@@ -62,3 +62,9 @@ query GetPetById {
   }
 }
 ```
+
+![image info](./img/2.png)
+
+![image info](./img/3.png)
+
+![image info](./img/4.png)
