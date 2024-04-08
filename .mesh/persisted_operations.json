@@ -1,0 +1,5 @@
+{
+  "8716219f1d0d9eb539c5d75834271437bb1f0cb380dbf6524c09d5e3c31a9b01": "query GetAnimeCharacter($id: Int!) {\n  Character(id: $id) {\n    name {\n      first\n      last\n    }\n    image {\n      large\n    }\n    age\n    description\n  }\n}",
+  "4dcdc18961b94f41ba059827f6703996b459be503d6504e01892758959d09e16": "query GetCountry($code: ID!) {\n  country(code: $code) {\n    name\n    native\n    capital\n    emoji\n    currency\n    languages {\n      code\n      name\n    }\n  }\n}",
+  "3ff8a0a8d49d3e40b2a1d64163a54c717efb4cb98f389375e937f3d5c2821b4d": "query GetPetById($petId: BigInt!) {\n  getPetById(petId: $petId) {\n    name\n    category {\n      id\n      name\n    }\n  }\n}"
+}
