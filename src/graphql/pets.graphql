@@ -1,0 +1,9 @@
+query GetPetById($petId: BigInt!) {
+  getPetById(petId: $petId) {
+    name
+    category {
+      id
+      name
+    }
+  }
+}
