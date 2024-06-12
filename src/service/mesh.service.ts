@@ -8,4 +8,14 @@ export class ApiService implements OnModuleInit {
   async onModuleInit() {
     this.sdk = getMeshSDK();
   }
+
+  async getCountry(code: string) {
+    try {
+      const result = await this.sdk.GetCountry({ code });
+      return result.country;
+    } catch (error) {
+      console.error('Error executing: ', error);
+      throw error;
+    }
+  }
 }
