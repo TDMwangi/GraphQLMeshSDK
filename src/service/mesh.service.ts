@@ -18,4 +18,14 @@ export class ApiService implements OnModuleInit {
       throw error;
     }
   }
+
+  async getAnime(id: number) {
+    try {
+      const result = await this.sdk.GetAnimeCharacter({ id });
+      return result.Character;
+    } catch (error) {
+      console.error('Error executing query:', error);
+      throw error;
+    }
+  }
 }
