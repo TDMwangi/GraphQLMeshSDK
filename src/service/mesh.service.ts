@@ -28,4 +28,14 @@ export class ApiService implements OnModuleInit {
       throw error;
     }
   }
+
+  async getPet(petId: any) {
+    try {
+      const result = await this.sdk.GetPetById({ petId });
+      return result.getPetById;
+    } catch (error) {
+      console.error('Error executing query:', error);
+      throw error;
+    }
+  }
 }
