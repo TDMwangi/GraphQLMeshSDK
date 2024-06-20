@@ -1,0 +1,16 @@
+sources:
+  - name: CountriesGraphQL
+    handler:
+      graphql:
+        endpoint: https://countries.trevorblades.com/graphql
+  - name: AnimeCharactersGraphQL
+    handler:
+      graphql:
+        endpoint: https://graphql.anilist.co
+  - name: PetStoreSwaggerAPI
+    handler:
+      openapi:
+        source: https://petstore.swagger.io/v2/swagger.json
+
+documents:
+  - ./src/**/*.graphql
